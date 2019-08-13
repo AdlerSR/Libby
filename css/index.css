@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face{
+    src: url(../font/Poppins-Medium.ttf);
+    font-family: 'Poppins';
+    font-weight: normal;
+}
+
+@font-face{
+    src: url(../font/Montserrat-Regular.ttf);
+    font-family: 'Montserrat';
+    font-weight: normal;
+}
+
+h1{
+    font-family: 'Poppins' !important;
+}
+
+h2, p{
+    font-family: 'Montserrat' !important;
+}
+
+.navbar{
+    padding: 0px !important;
+}
+.navbar-custom {
+    overflow: hidden;
+    background: rgb(69, 71, 100);
+    transition: 0.4s;
+    top: 0;
+}
+
+.nav-link a{
+    color: rgb(246, 246, 246);
+    font-family: Poppins;
+    font-size: 1rem;
+}
+
+.nav-link a:hover{
+    color: #F6F6F6;
+    border-bottom: 1px solid rgb(246, 246, 246);
+    text-decoration: none;
+}
+
+.fa-bars {
+    color: #F6F6F6;
+    font-size: 35px;
+}
+
+.logo {
+    width: 130px;
+    padding: 10px;
+    transition: 0.4s;
+}
+
+.home-part{
+    background: linear-gradient(rgb(132, 220, 198, 0.9),rgba(132, 220, 198, 0.7)), url('../img/background-1747786.jpg');
+    min-height: 60vh;
+}
+
+.home-content{
+    margin-top: 45px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.logo-home{
+    width: 85%;
+}
+
+.title-home{
+    font-size: 40px;
+    color: #353434;
+}
+
+.img-home{
+    width: 100%; 
+}
+
+.home-left{
+    margin-top: 13%;
+}
+
+.home-right{
+    margin-top: 5%;
+}
+
+.sobreNos-part{
+    overflow: hidden;
+    background: #EBEEF1;
+    min-height: 60vh;
+}
+
+.title-sobreNos{
+    font-size: 40px;
+}
+
+.subtitle-sobreNos{
+    font-size: 26px;
+}
