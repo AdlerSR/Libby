@@ -10,17 +10,17 @@
 }
 
 @font-face{
-    src: url(../font/Montserrat-Regular.ttf);
-    font-family: 'Montserrat';
+    src: url(../font/Roboto-Regular.ttf);
+    font-family: 'Roboto';
     font-weight: normal;
 }
 
-h1{
+h1, h2, a{
     font-family: 'Poppins' !important;
 }
 
-h2, p{
-    font-family: 'Montserrat' !important;
+h3, p{
+    font-family: 'Roboto' !important;
 }
 
 .navbar{
@@ -35,7 +35,6 @@ h2, p{
 
 .nav-link a{
     color: rgb(246, 246, 246);
-    font-family: Poppins;
     font-size: 1rem;
 }
 
@@ -43,6 +42,10 @@ h2, p{
     color: #F6F6F6;
     border-bottom: 1px solid rgb(246, 246, 246);
     text-decoration: none;
+}
+
+.a-nav{
+    margin-left: 10px; 
 }
 
 .fa-bars {
@@ -57,7 +60,7 @@ h2, p{
 }
 
 .home-part{
-    background: linear-gradient(rgb(132, 220, 198, 0.9),rgba(132, 220, 198, 0.7)), url('../img/background-1747786.jpg');
+    background: linear-gradient(rgba(132, 220, 198, 0.9),rgba(132, 220, 198, 0.7)), url('../img/background-1747786.jpg');
     min-height: 60vh;
 }
 
@@ -88,16 +91,124 @@ h2, p{
     margin-top: 5%;
 }
 
-.sobreNos-part{
+.sobre-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.sobre-part{
     overflow: hidden;
     background: #EBEEF1;
     min-height: 60vh;
 }
 
-.title-sobreNos{
+.title-sobre{
     font-size: 40px;
 }
 
-.subtitle-sobreNos{
+.subtitle-sobre{
     font-size: 26px;
+}
+
+.textHead-sobre{
+    margin-bottom: 25%;
+}
+
+.boxTitle-sobre{
+    position:relative;
+    display:inline-block;
+    margin-bottom: 3%;
+}
+
+.boxTitle-sobre:after{
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    top:80%;
+    margin:10px auto;
+    width:60%;
+    height:6px;
+    border-radius: 20px;
+    background:rgb(103, 111, 192);
+}
+
+.boxCard-sobre{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 35vh;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px 25px 0px 25px;
+}
+
+.boxSpace-sobre{
+    margin-top: 7%;
+}
+
+.boxSpace-sobre2{
+    margin-top: 3%;
+}
+
+.boxImg-sobre{
+    width: 40%;
+    margin-bottom: 2%;
+}
+
+.rocketImg{
+    margin-left: 10%;
+}
+
+.boxSubtitle-sobre{
+    font-size: 1.1rem;
+    margin-top: 5%;
+}
+
+.equipe-part{
+    background: linear-gradient(rgba(69, 71, 100, 0.9),rgba(69, 71, 100, 0.8)), url('../img/ice-2025937_1920.jpg');
+    overflow: hidden;
+    min-height: 60vh;
+}
+
+.equipe-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title-equipe{
+    color: #F6F6F6;
+    font-size: 40px;
+}
+
+.subtitle-equipe{
+    margin-top: 5%;
+    color: #F6F6F6;
+    font-size: 26px;
+}
+
+.boxTitle-equipe:after{
+    content:'';
+    position:absolute;
+    left:0; right:0;
+    top:27%;
+    margin:10px auto;
+    width:11%;
+    height:6px;
+    border-radius: 20px;
+    background:rgb(132, 220, 198, 1);
+}
+
+.boxCard-equipe{
+    background-color: #ffffff;
+    border-radius: 10px;
+    min-height: 35vh;
+    box-shadow: 3px 3px 3px rgb(132, 220, 198, 0.5);
+    padding: 15px 25px 0px 25px;
+}
+
+.boxSpace-equipe{
+    margin-top: 7%;
+}
+
+.boxImg-equipe{
+    border-radius: 100%;
+    border: solid 1px rgb(255, 255, 255, 0.8);
 }
