@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <title>Libby</title>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer>
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -210,29 +213,38 @@
                         provident eaque modi consequuntur praesentium temporibus labore</h3>
                 </div>
                 <div class="alignContato-right col-md-6">
-                    <form action="">
+                    <form action="#" method="POST" name="htmlform" id="form" novalidate>
                         <div class="form-row">
                             <div class="col">
-                                <input type="text" class="form-control" placeholder="Insira o seu nome">
+                                <input type="text" class="form-control" name="nome" id="nome"
+                                    placeholder="Insira o seu nome">
                             </div>
                             <div class="col">
-                                <input type="email" class="form-control" placeholder="Insira o seu email">
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="col">
-                                <input type="text" class="form-control" placeholder="Insira o Assunto">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Insira o seu email">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <textarea type="text" class="form-control messageArea" rows="6"
-                                    placeholder="Insira a sua mensagem"></textarea>
+                                <input type="text" class="form-control" name="assunto" id="assunto"
+                                    placeholder="Insira o Assunto">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="col">
-                                <button type="button" class="btn btn-custom btn-lg btn-block">Enviar</button>
+                                <textarea type="text" class="form-control messageArea" name="mensagem" id="mensagem"
+                                    rows="6" placeholder="Insira a sua mensagem"></textarea>
+                            </div>
+                        </div>
+                        <span id="message"></span>
+                        <div class="form-row">
+                            <div class="col">
+                                <div id="google_recaptcha"></div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col">
+                                <button type="button" id="button" class="btn btn-custom btn-lg btn-block">Enviar</button>
                             </div>
                         </div>
                     </form>
@@ -257,6 +269,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
