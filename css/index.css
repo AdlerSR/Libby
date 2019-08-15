@@ -23,6 +23,10 @@ h3, p{
     font-family: 'Roboto' !important;
 }
 
+input, textarea{
+    background: #f6f6f6 !important;
+}
+
 .navbar{
     padding: 0px !important;
 }
@@ -96,31 +100,33 @@ h3, p{
     padding-bottom: 50px;
 }
 
-.sobre-part{
+.gray-part{
     overflow: hidden;
     background: #EBEEF1;
     min-height: 60vh;
 }
 
-.title-sobre{
+.titleContent-black{
     font-size: 40px;
+    color: #353434;
 }
 
-.subtitle-sobre{
+.subtitleContent-Black{
     font-size: 26px;
+    color: #353434;
 }
 
 .textHead-sobre{
     margin-bottom: 25%;
 }
 
-.boxTitle-sobre{
+.boxTitle-blue{
     position:relative;
     display:inline-block;
     margin-bottom: 3%;
 }
 
-.boxTitle-sobre:after{
+.boxTitle-blue:after{
     content:'';
     position:absolute;
     left:0; right:0;
@@ -141,7 +147,7 @@ h3, p{
 }
 
 .boxSpace-sobre{
-    margin-top: 7%;
+    margin-top: 3%;
 }
 
 .boxSpace-sobre2{
@@ -173,24 +179,29 @@ h3, p{
     padding-bottom: 50px;
 }
 
-.title-equipe{
+.titleContent-white{
     color: #F6F6F6;
     font-size: 40px;
 }
 
-.subtitle-equipe{
-    margin-top: 5%;
+.subtitleContent-white{
     color: #F6F6F6;
     font-size: 26px;
 }
 
-.boxTitle-equipe:after{
+.boxTitle-green{
+    position:relative;
+    display:inline-block;
+    margin-bottom: 3%;
+}
+
+.boxTitle-green:after{
     content:'';
     position:absolute;
     left:0; right:0;
-    top:27%;
+    top:80%;
     margin:10px auto;
-    width:11%;
+    width:60%;
     height:6px;
     border-radius: 20px;
     background:rgb(132, 220, 198, 1);
@@ -208,7 +219,97 @@ h3, p{
     margin-top: 7%;
 }
 
+.boxSpace-equipe2{
+    margin-top: 7%;
+}
+
 .boxImg-equipe{
     border-radius: 100%;
-    border: solid 1px rgb(255, 255, 255, 0.8);
+    width: 86%;
+    border: solid 2px rgb(119, 123, 172);
+}
+
+.imgTitle-equipe{
+    background: linear-gradient(to right, rgb(143, 245, 219) 0%, rgb(50, 233, 187) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.imgSubtitle-equipe{
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+}
+
+.fab{
+    transition: 0.5s;
+    color: rgb(103, 111, 192);
+}
+
+.fab:hover{
+    color: rgb(141, 150, 243);
+}
+
+.fa-circle{
+    color: white;
+}
+
+.fa-circle:hover{
+    color: #f6f6f6;
+}
+
+.fa-2x {
+    font-size: 1.6em;
+}
+
+.socialButton-equipe{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.background-footer{
+    border-top:solid 2px rgb(132, 220, 198, 1);
+    background: rgb(69, 71, 100);
+    color: white;
+}
+
+.contato-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.alignContato-left{
+    margin-top: 11%;
+}
+
+.alignContato-right{
+    margin-top: 6%;
+}
+
+.boxCard-contato{
+    background-color: white;
+    border-radius: 10px;
+    min-height: 35vh;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+    padding: 15px 25px 0px 25px;
+}
+
+.form-row{
+    margin-bottom: 5%;
+}
+.messageArea{
+    resize: none;
+}
+
+.boxSpace-contato{
+    margin-top: 3%;
+}
+
+.btn-custom{
+    background-color: rgb(130, 135, 192);
+    color: white;
+}
+
+.btn-custom:hover{
+    transition: all .8s ease;
+    background-color: rgb(154, 161, 233);
 }
