@@ -40,7 +40,23 @@ $(function () {
     });
 
     function errorMessege(message){
-        $("#message").stop().slideDown().html(message).delay(1500).slideUp();
+        $("#message").html(`<div class="position-absolute w-100 d-flex flex-column p-4">
+        <div class="toastTransition toast ml-auto" role="alert" data-delay="700" data-autohide="false">
+            <div class="toast-header">
+                <strong class="mr-auto toastText">Aviso <i class="fas fa-exclamation-triangle"></i></strong>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                </button>
+            </div>
+            <div class="toast-body">
+                ${message}
+            </div>
+            </div>
+        </div>`);
+
+        setTimeout(()=>{
+            $("#message").html('');
+        }, 3000);
+
     }
 
     async function SubmitMessege(){
